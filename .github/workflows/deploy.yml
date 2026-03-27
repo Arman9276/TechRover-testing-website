@@ -58,5 +58,5 @@ jobs:
             docker stop react-app || true
             docker rm react-app || true
 
-            docker run -d -p 80:80 --name react-app \
+            docker run -d -p 81:80 --name react-app \
             ${{ steps.login-ecr.outputs.registry }}/${{ secrets.ECR_REPOSITORY }}:latest
